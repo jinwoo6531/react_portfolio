@@ -4,20 +4,20 @@ import Popup from 'reactjs-popup';
 import ImageGallery from 'react-image-gallery';
 
 const ProjectCard = ({ image, name, url }) => {
-  const images = [
-    {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ];
+//   const images = [
+//     {
+//       original: 'https://picsum.photos/id/1018/1000/600/',
+//       thumbnail: 'https://picsum.photos/id/1018/250/150/',
+//     },
+//     {
+//       original: 'https://picsum.photos/id/1015/1000/600/',
+//       thumbnail: 'https://picsum.photos/id/1015/250/150/',
+//     },
+//     {
+//       original: 'https://picsum.photos/id/1019/1000/600/',
+//       thumbnail: 'https://picsum.photos/id/1019/250/150/',
+//     },
+//   ];
 
   const projectCardVariants = {
     initial: {
@@ -71,7 +71,7 @@ const ProjectCard = ({ image, name, url }) => {
             closeOnDocumentClick={true}
             triggerOn="click"
           >
-            <ImageGallery items={images} />
+            {/* <ImageGallery items={images} /> */}
             <div className="project_name mt-2">{name}</div>
             <div>asdasd</div>
             <div>asdasd</div>
