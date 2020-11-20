@@ -61,7 +61,7 @@ const SideBar = () => {
 
       <div className="email side_item mt-6" onClick={handleSentEmail}>
         {' '}
-        Email me{' '}
+        Email
       </div>
       {/* <div className="mode"><button className='btn' onClick={changeMode}>mode</button></div> */}
     </motion.div>
