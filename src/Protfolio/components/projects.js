@@ -64,12 +64,12 @@ const Projects = () => {
         >
           Node.js
         </div>
-        <div
+        {/* <div
           className="project_header_child"
           onClick={() => handleFilterCatagory('vanila')}
         >
           Vanila js
-        </div>
+        </div> */}
       </div>
       <div className="row">
         {projects.map((project, i) => (

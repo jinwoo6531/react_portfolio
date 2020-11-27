@@ -56,6 +56,7 @@ const ProjectCard = ({ image, name, url }) => {
             <img src={image} alt="project_image" className="project_image" />
           </a> */}
 
+          {/* Popup설정 */}
           <Popup
             trigger={
               <img src={image} alt="project_image" className="project_image" />
