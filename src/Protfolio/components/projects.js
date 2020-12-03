@@ -64,12 +64,6 @@ const Projects = () => {
         >
           Node.js
         </div>
-        {/* <div
-          className="project_header_child"
-          onClick={() => handleFilterCatagory('vanila')}
-        >
-          Vanila js
-        </div> */}
       </div>
       <div className="row">
         {projects.map((project, i) => (
@@ -78,6 +72,14 @@ const Projects = () => {
             image={project.image}
             name={project.name}
             url={project.url}
+            disc1={project.disc1}
+            disc2={project.disc2}
+            disc3={project.disc3}
+            disc4={project.disc4}
+            disc5={project.disc5}
+            disc6={project.disc6}
+            intro={project.intro}
+            deploy={project.deploy}
           />
         ))}
       </div>

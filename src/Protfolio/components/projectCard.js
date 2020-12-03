@@ -1,24 +1,20 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Popup from 'reactjs-popup';
-import ImageGallery from 'react-image-gallery';
 
-const ProjectCard = ({ image, name, url }) => {
-//   const images = [
-//     {
-//       original: 'https://picsum.photos/id/1018/1000/600/',
-//       thumbnail: 'https://picsum.photos/id/1018/250/150/',
-//     },
-//     {
-//       original: 'https://picsum.photos/id/1015/1000/600/',
-//       thumbnail: 'https://picsum.photos/id/1015/250/150/',
-//     },
-//     {
-//       original: 'https://picsum.photos/id/1019/1000/600/',
-//       thumbnail: 'https://picsum.photos/id/1019/250/150/',
-//     },
-//   ];
-
+const ProjectCard = ({
+  image,
+  name,
+  disc1,
+  disc2,
+  disc3,
+  disc4,
+  disc5,
+  disc6,
+  intro,
+  url,
+  deploy,
+}) => {
   const projectCardVariants = {
     initial: {
       opacity: 0,
@@ -39,10 +35,6 @@ const ProjectCard = ({ image, name, url }) => {
   };
 
   return (
-    //     <Popup trigger={<button> Trigger</button>} position="right center">
-    //     <div>Popup content here !!</div>
-    //   </Popup>
-
     <AnimatePresence exitBeforeEnter>
       <motion.div
         className="col-sm-12 col-md-6 col-lg-4 mt-2"
@@ -72,10 +64,29 @@ const ProjectCard = ({ image, name, url }) => {
             closeOnDocumentClick={true}
             triggerOn="click"
           >
-            {/* <ImageGallery items={images} /> */}
-            <div className="project_name mt-2">{name}</div>
-            <div>asdasd</div>
-            <div>asdasd</div>
+            <h4>소개</h4>
+            <p>{intro}</p>
+            <h4>사용기술</h4>
+            <ul>
+              {disc1 && <li>{disc1}</li>}
+              {disc2 && <li>{disc2}</li>}
+              {disc3 && <li>{disc3}</li>}
+              {disc4 && <li>{disc4}</li>}
+              {disc5 && <li>{disc5}</li>}
+              {disc6 && <li>{disc6}</li>}
+            </ul>
+
+            <h4>Github</h4>
+            <a href={url}>{url}</a>
+            <br />
+            <br />
+
+            {deploy && (
+              <>
+                <h4>배포</h4>
+                <a href={deploy}>{deploy}</a>
+              </>
+            )}
           </Popup>
         </figure>
       </motion.div>
