@@ -1,6 +1,6 @@
 import movie from '../projects_images/movieMain.png';
 import kanbanboard from '../projects_images/KanbanBoard.png';
-import mapProject from '../projects_images/mapProject.png';
+// import mapProject from '../projects_images/mapProject.png';
 import movie_search from '../projects_images/movie_search.png';
 
 let projects_store = [
