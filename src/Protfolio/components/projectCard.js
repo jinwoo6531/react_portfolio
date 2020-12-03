@@ -77,14 +77,18 @@ const ProjectCard = ({
             </ul>
 
             <h4>Github</h4>
-            <a href={url}>{url}</a>
+            <a href={url} target="_blank">
+              {url}
+            </a>
             <br />
             <br />
 
             {deploy && (
               <>
                 <h4>배포</h4>
-                <a href={deploy}>{deploy}</a>
+                <a href={deploy} target="_blank" alt="dd">
+                  {deploy}
+                </a>
               </>
             )}
           </Popup>
