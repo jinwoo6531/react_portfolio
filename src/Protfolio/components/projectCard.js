@@ -44,10 +44,6 @@ const ProjectCard = ({
         exit="exit"
       >
         <figure className="project_wrapper">
-          {/* <a href={url}>
-            <img src={image} alt="project_image" className="project_image" />
-          </a> */}
-
           {/* Popup설정 */}
           <Popup
             trigger={
@@ -77,7 +73,7 @@ const ProjectCard = ({
             </ul>
 
             <h4>Github</h4>
-            <a href={url} target="_blank">
+            <a href={url} target="_blank" rel="noopener noreferrer">
               {url}
             </a>
             <br />
@@ -86,7 +82,7 @@ const ProjectCard = ({
             {deploy && (
               <>
                 <h4>배포</h4>
-                <a href={deploy} target="_blank" alt="dd">
+                <a href={deploy} target="_blank" rel="noopener noreferrer">
                   {deploy}
                 </a>
               </>
