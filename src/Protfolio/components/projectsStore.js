@@ -1,9 +1,10 @@
 import movie from '../projects_images/movieMain.png';
 import kanbanboard from '../projects_images/KanbanBoard.png';
-// import mapProject from '../projects_images/mapProject.png';
+import storybook from '../projects_images/storybook.png';
 import movie_search from '../projects_images/movie_search.png';
 
 let projects_store = [
+  //Movie App
   {
     name: 'Movie Reservation App',
     image: movie,
@@ -18,6 +19,8 @@ let projects_store = [
     disc5: 'Node.js를 활용하여 REST API 사용',
     disc6: 'MongoDB로 데이터 관리',
   },
+
+  //Trello
   {
     name: 'KanbanBoard',
     image: kanbanboard,
@@ -37,6 +40,8 @@ let projects_store = [
   //   url: 'https://jinwoo6531.github.io/mapTest/',
   //   catagory: ['node.js', 'vanila'],
   // },
+
+  //Movie_search
   {
     name: 'Movie_search(Typescript version)',
     image: movie_search,
@@ -50,6 +55,21 @@ let projects_store = [
     disc3: 'useReducer 활용한 state 상태관리',
     disc4: 'Typescript를 활용한 Type지정',
     disc5: 'Github을 활용한 버전 관리  진행',
+  },
+
+  //storybook
+  {
+    name: 'StoryBook',
+    image: storybook,
+    deploy: 'https://sad-meninsky-70188d.netlify.app',
+    url: 'https://github.com/jinwoo6531/storybook',
+    catagory: ['react.js', 'typescript'],
+    intro:
+      'StoryBook Framework에 직접 만든 Grid 컴포넌트를 적용한 개인 프로젝트',
+    disc1: 'React, Typescript를 활용한 타입 설정',
+    disc2: 'CSS의 함수를 활용할 수 있는 SCSS 적용',
+    disc3: 'StoryBook 프레임워크 적용',
+    disc4: 'Github을 활용한 버전 관리  진행',
   },
 ];
 export default projects_store;
