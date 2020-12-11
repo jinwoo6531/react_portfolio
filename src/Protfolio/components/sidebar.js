@@ -44,15 +44,18 @@ const SideBar = () => {
         <div className="location side_item">
           <img src={pin} alt="pin" className="icon_small  mr-1" /> 서울시 노원구
         </div>
-        <a href="https://github.com/jinwoo6531/">
+        <a
+          href="https://github.com/jinwoo6531/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="github side_item">
-            {' '}
             <img
               src={github}
               alt="git"
               className="icon_small social_icon mr-1"
-            />{' '}
-            github{' '}
+            />
+            github
           </div>
         </a>
         <div className="email_id side_item"> jintakk6531@gmail.com </div>
