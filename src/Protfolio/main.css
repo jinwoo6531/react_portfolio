@@ -365,8 +365,8 @@ a:hover {
 
 .project_image {
   border-radius: 20px;
-  border: 1px solid #00f260;
-  width: 100%;
+  border: 1px solid black;
+  width: 90%;
   height: 80%;
 }
 
