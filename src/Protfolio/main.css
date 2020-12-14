@@ -277,7 +277,8 @@ a:hover {
 }
 
 .skill {
-  background-image: linear-gradient(to right, gray, white);
+  /* background-image: linear-gradient(to right, gray, white); */
+  background: skyblue;
   border-radius: 20px;
   color: #fff;
   padding: 4px 14px;
